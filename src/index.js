@@ -11,7 +11,10 @@ const poems = [
 
 const randomPoems = () => {
   const poem = poems[Math.floor(Math.random() * poems.length)];
-  console.log(poem);
+  
+  return poem; // Miss this one...
+
+  // console.log(poem); For testing on local yes
 };
 
-module.exports = { randomPoems };
+module.exports = randomPoems; //  Defined as a function so no need { randomPoems };
